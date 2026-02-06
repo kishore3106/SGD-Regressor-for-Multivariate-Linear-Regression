@@ -8,15 +8,17 @@ To write a program to predict the price of the house and number of occupants in 
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Import the required packages and print the present data.  
+Step 1: Load and Prepare the Dataset - Import the dataset and extract multiple independent variables X = [x1, x2, ..., xn] and dependent variable Y.
 
-2.Print the placement data and salary data. 
+Step 2: Split the Data - Divide the dataset into training and testing sets (e.g., 80-20 split) using train_test_split.
 
-3.Find the null and duplicate values.  
+Step 3: Feature Scaling - Normalize or standardize the features using StandardScaler to ensure all features are on the same scale.
 
-4.Using logistic regression find the predicted values of accuracy , confusion matrices. 
+Step 4: Initialize SGD Regressor - Create SGD Regressor model with parameters: learning rate η, max iterations, and loss function (squared loss).
 
-5.Display the results.
+Step 5: Train the Model Using Stochastic Gradient Descent - Fit the model on training data where parameters θ are updated as θ = θ - η∇J(θ) for each sample.
+
+Step 6: Predict and Evaluate - Make predictions on test data using Ŷ = θ0 + θ1x1 + θ2x2 + ... + θnxn and evaluate using metrics (MSE, R² score).
 
 ## Program:
 ```
