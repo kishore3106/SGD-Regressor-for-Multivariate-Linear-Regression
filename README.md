@@ -8,21 +8,19 @@ To write a program to predict the price of the house and number of occupants in 
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-Step 1: Load and Prepare the Dataset - Import the dataset and extract multiple independent variables X = [x1, x2, ..., xn] and dependent variable Y.
+1.Import the required packages and print the present data. 
 
-Step 2: Split the Data - Divide the dataset into training and testing sets (e.g., 80-20 split) using train_test_split.
+2.Print the placement data and salary data. 
 
-Step 3: Feature Scaling - Normalize or standardize the features using StandardScaler to ensure all features are on the same scale.
+3.Find the null and duplicate values. 
 
-Step 4: Initialize SGD Regressor - Create SGD Regressor model with parameters: learning rate η, max iterations, and loss function (squared loss).
+4.Using logistic regression find the predicted values of accuracy , confusion matrices. 
 
-Step 5: Train the Model Using Stochastic Gradient Descent - Fit the model on training data where parameters θ are updated as θ = θ - η∇J(θ) for each sample.
-
-Step 6: Predict and Evaluate - Make predictions on test data using Ŷ = θ0 + θ1x1 + θ2x2 + ... + θnxn and evaluate using metrics (MSE, R² score).
-
+5.Display the results.
 ## Program:
 ```
 /*
+Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
 Developed by: KISHORE B
 RegisterNumber: 212224100032
 
@@ -53,13 +51,12 @@ print(y_pred)
 mse = mean_squared_error(y_test,y_pred)
 print("Mean Squared Error:",mse)
 print("\nPredictions:\n",y_pred[:5])
-   
 */
 ```
 
 ## Output:
-<img width="553" height="333" alt="image" src="https://github.com/user-attachments/assets/344af12a-1018-44cb-a5c6-fc670d2caa71" />
 
+<img width="659" height="481" alt="image" src="https://github.com/user-attachments/assets/412d2ec6-ed00-4371-8409-51621045791c" />
 
 ## Result:
 Thus the program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor is written and verified using python programming.
